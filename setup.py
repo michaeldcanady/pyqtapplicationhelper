@@ -4,7 +4,7 @@ from os.path import join
 from typing import List
 
 from setuptools import setup
-from pyqtapplicationhelper import __version__
+from pyqtapplicationhelper import __version__, __module_name__
 
 def get_dependancies() -> List[str]:
     """Gets dependancies from requirements.txt"""
@@ -23,14 +23,14 @@ def get_dependancies() -> List[str]:
 
 def get_packages() -> List[str]:
     """Gets all subpackages"""
-    directory = join(".","pyservicenow")
+    directory = join(".","pyqtapplicationhelper")
 
     _packages = [x[0].replace("\\",".") for x in walk(directory) if "__pycache__" not in x[0]]
 
     return _packages
 
 setup(
-    name = "pyqtapplicationhelper",
+    name = __module_name__,
     version = __version__,
     author = "michaeldcanady",
     author_email = "",
@@ -39,5 +39,6 @@ setup(
     #keywords = "example documentation tutorial",
     url = "https://github.com/michaeldcanady/pyqtapplicationhelper",
     packages=get_packages(),
+    install_requires=get_dependancies()
     #long_description=read('README'),
 )
