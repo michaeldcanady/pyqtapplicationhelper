@@ -18,7 +18,7 @@ jobs:
           python-version: 3.11
       - name: Install libGL
         run: |
-          apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
+          sudo apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
       - name: Install requirements
         run : |
           pip install -r requirements.txt
