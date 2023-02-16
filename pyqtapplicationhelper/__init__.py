@@ -3,6 +3,6 @@ from .change_log_dialog import ChangeLogDialog
 
 __all__ = ["inherits_from_ui_file_with_name","ChangeLogDialog"]
 
-__version__ = "0.1.12"
+__version__ = "0.1.13"
 
 __module_name__ = "pyqtapplicationhelper"
