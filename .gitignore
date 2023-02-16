@@ -11,7 +11,7 @@ dist/
 
 *.egg-info/
 
-venv/
+*venv/
 
 Testing/
 
