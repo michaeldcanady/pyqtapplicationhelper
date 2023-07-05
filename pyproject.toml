@@ -12,10 +12,10 @@ dynamic = ["version", "description"]
 requires-python = ">3.8.0"
 
 dependencies = [
-    "Markdown==3.4.1",
-    "PyQt6==6.3.1",
-    "PyQt6-Qt6==6.3.1",
-    "PyQt6-sip==13.4.0",
+    "Markdown==3.4.3",
+    "PyQt6==6.5.1",
+    "PyQt6-Qt6==6.5.1",
+    "PyQt6-sip==13.5.1",
 ]
 
 [project.urls]
